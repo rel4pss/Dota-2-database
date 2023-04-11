@@ -99,3 +99,5 @@
 | --- | --- | --- |
 | con_match_id | идентификатор матча | INTEGER |
 | con_hero_name | название героя | VARCHAR(50) |
+| side | сторона | VARCHAR(10) |
+| role | роль | VARCHAR(10) |
