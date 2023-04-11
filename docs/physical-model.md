@@ -25,14 +25,13 @@
 
 ## League
 
-| Название          | Описание | Тип данных |
-|-------------------| --- | --- |
-| league_id         | идентификатор | INTEGER |
-| league_name       | название | VARCHAR(50) |
-| region            | регион | VARCHAR(50) |
-| division          | дивизион | INTEGER |
-| prev_champ_name   | название команды-предыдущего чемпиона | VARCHAR(50) |
-| league_sponsor_id | спонсор | VARCHAR(50) |
+| Название          | Описание      | Тип данных  |
+|-------------------|---------------|-------------|
+| league_id         | идентификатор | INTEGER     |
+| league_name       | название      | VARCHAR(50) |
+| region            | регион        | VARCHAR(50) |
+| division          | дивизион      | INTEGER     |
+| in_dpc            | часть DPC     | BOOL        |
 
 ## Player
 
@@ -80,12 +79,12 @@
 
 ## Company
 
-| Название | Описание | Тип данных |
-| --- | --- | --- |
-| company_id | идентификатор | INTEGER |
-| company_name | название | VARCHAR(50) |
-| foundation_date | дата | TIMESTAMP |
-| owner | владелец | VARCHAR(50) |
+| Название        | Описание        | Тип данных |
+|-----------------|-----------------| --- |
+| company_id      | идентификатор   | INTEGER |
+| company_name    | название        | VARCHAR(50) |
+| foundation_date | дата            | TIMESTAMP |
+| key_figure      | ключевая фигура | VARCHAR(50) |
 
 ## League_Sponsor
 
