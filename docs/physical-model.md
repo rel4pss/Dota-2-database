@@ -1,6 +1,6 @@
 # Dota2
 
-# Coach
+## Coach
 
 | Название | Описание | Тип данных |
 | --- | --- | --- |
@@ -14,7 +14,7 @@
 | coach_valid_from | дата начала актуальности | TIMESTAMP |
 | coach_valid_to | дата конца актуальности | TIMESTAMP |
 
-# Team
+## Team
 
 | Название | Описание | Тип данных |
 | --- | --- | --- |
@@ -23,7 +23,7 @@
 | league_id | идентификатор лиги | INTEGER |
 | team_coach_nickname | тренер | VARCHAR |
 
-# League
+## League
 
 | Название          | Описание | Тип данных |
 |-------------------| --- | --- |
@@ -34,7 +34,7 @@
 | prev_champ_name   | название команды-предыдущего чемпиона | VARCHAR(50) |
 | league_sponsor_id | спонсор | VARCHAR(50) |
 
-# Player
+## Player
 
 | Название | Описание | Тип данных |
 | --- | --- | --- |
@@ -50,7 +50,7 @@
 | player_valid_from | дата начала актуальности | TIMESTAMP |
 | player_valid_to | дата конца актуальности | TIMESTAMP |
 
-# Hero
+## Hero
 
 | Название         | Описание | Тип данных             |
 |------------------| --- |------------------------|
@@ -65,7 +65,7 @@
 | min_base_dmg     | нижнее значение урона | INTEGER                |
 | base_attack_time | базовое время атаки | REAL                   |
 
-# Match
+## Match
 
 | Название   | Описание | Тип данных           |
 |------------| --- |----------------------|
@@ -78,7 +78,7 @@
 | duration   | длительность(MIN) | INTEGER              |
 | patch      | патч | VARCHAR(20)          |
 
-# Company
+## Company
 
 | Название | Описание | Тип данных |
 | --- | --- | --- |
@@ -87,14 +87,14 @@
 | foundation_date | дата | TIMESTAMP |
 | owner | владелец | VARCHAR(50) |
 
-# League_Sponsor
+## League_Sponsor
 
 | Название       | Описание | Тип данных |
 |----------------| --- | --- |
 | con_leasgue_id | идентификатор лиги | INTEGER |
 | con_sponsor_id | идентификатор спонсора | INTEGER |
 
-# Match_Hero
+## Match_Hero
 
 | Название | Описание | Тип данных |
 | --- | --- | --- |
