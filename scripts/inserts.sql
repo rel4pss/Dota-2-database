@@ -7,7 +7,7 @@ INSERT INTO companies (company_id, company_name, foundation_date, key_figure)  V
 (5, 'USM Holdings', '2012-01-01', 'Alisher Usmanov'),
 (6, 'StrongBow', '1960-01-01', null);
 
-INSERT INTO leagues(league_id, league_name, region, division, in_dpc) VALUES
+INSERT INTO leagues(league_id, league_name, league_region, division, in_dpc) VALUES
 (0, 'DPC NA 2023 Division II', 'North America', 2, true),
 (1, 'DPC WEU 2023 Division I', 'West europe', 1, true),
 (2, 'DPC WEU 2023 Division II', 'West europe', 2, true),
@@ -29,7 +29,7 @@ INSERT INTO coaches (coach_nickname, coach_surname, coach_firstname, coach_age, 
 ('Aui_2000', 'Ling', 'Kurtis', 30, 'Canada', 2008622, '2012-01-01', '2022-09-01', '2023-09-01'),
 ('Heen', 'Lee', 'Seung Gon', 36, 'South Korea', 81519, '2013-01-01', '2023-02-28', '2023-09-01');
 
-INSERT INTO teams (team_name, region, team_league_id, team_coach_nickname) VALUES
+INSERT INTO teams (team_name, team_region, team_league_id, team_coach_nickname) VALUES
 ('PSG.LGD', 'China', 3, 'xiao8'),
 ('Team Liquid', 'EU', 1, 'Blitz'),
 ('Team Spirit', 'CIS', 5, 'Silent'),
@@ -59,7 +59,7 @@ INSERT INTO heroes (hero_name, main_attribute, melee_range, strength, agility, i
 INSERT INTO matches (match_id, match_league_id, match_date, rad_team_name, dire_team_name, won, duration, patch) VALUES
 (0, 1, '2023-04-10', 'Thundra Esports', 'Team Liquid', 'DIRE', 43, '7.32e');
 
-INSERT INTO match_heroes (con_match_id, con_hero_name, side, role) VALUES
+INSERT INTO match_heroes (con_match_id, con_hero_name, side, hero_role) VALUES
 (0, 'Axe', 'RAD', 'carry'),
 (0, 'Bane', 'RAD', 'mid'),
 (0, 'Centaur Warrunner', 'RAD', 'offlane'),

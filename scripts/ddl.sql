@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS leagues
 (
     league_id int PRIMARY KEY,
     league_name varchar(50),
-    region varchar(50),
+    league_region varchar(50),
     division int,
     in_dpc bool
 );
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS coaches (
 
 CREATE TABLE IF NOT EXISTS teams (
     team_name varchar(50) PRIMARY KEY,
-    region varchar(50),
+    team_region varchar(50),
     team_league_id int,
         FOREIGN KEY (team_league_id) REFERENCES leagues(league_id),
     team_coach_nickname varchar(50),
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS players (
 CREATE TABLE IF NOT EXISTS heroes (
     hero_name varchar(50) PRIMARY KEY,
     main_attribute varchar(20),
-    melee_range varchar(10) CHECK (melee_range='MELEE' or melee_range='RANGE'),
+    melee_range varchar(5) CHECK (melee_range='MELEE' or melee_range='RANGE'),
     strength int,
     agility int,
     intelligence int,
@@ -90,5 +90,5 @@ CREATE TABLE IF NOT EXISTS match_heroes (
     con_hero_name varchar(50),
         FOREIGN KEY (con_hero_name) REFERENCES heroes(hero_name),
     side varchar(10) CHECK (side='RAD' or side='DIRE'),
-    role varchar(10)
+    hero_role varchar(10)
 );
